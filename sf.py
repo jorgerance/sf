@@ -89,6 +89,7 @@ cbar.ax.tick_params(labelsize=ls)
 cbar.ax.set_ylabel('Days before halving', fontsize=ls)
 
 ax.text(0.1, 0.95,r'$SF = \frac{S}{F_p}$'"\n"'p = 14d', ha='center', va='center', style='italic', fontsize=ls, transform=ax.transAxes, bbox=dict(facecolor='none', edgecolor='black', pad=10.0))
+plt.text(0.95, 0.1, 'github.com/pyzhyk/sf', horizontalalignment='right', verticalalignment='center', transform=ax.transAxes, fontsize=20, bbox=dict(facecolor='#e1e1e1', alpha=0.4, edgecolor='black', pad=10.0))
 fig.tight_layout()
 
 plt.savefig('BTC-SF-MV.png')
