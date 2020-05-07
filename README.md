@@ -47,9 +47,9 @@ Where:
 | S           | Stock (supply)                                     |
 | F     | Flow (subsidy of new coins)  |
 
-Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[2]](#2-satoshi-nakamoto--bitcoin-a-peer-to-peer-electronic-cash-systemhttpsbitcoinorgbitcoinpdf), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years, which begets significant increase in scarcity.
+Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[2]](#2-satoshi-nakamoto--bitcoin-a-peer-to-peer-electronic-cash-system), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years, which begets significant increase in scarcity.
 
-Initially, the total stock for each halving date is calculated. This can be implemented using the following Python code, part of which is [ndsvw's Bitcoin supply calculator](https://github.com/ndsvw/Bitcoin-Supply-Calculator).
+Initially, the total stock for each halving date is calculated. This can be implemented using the following Python code, part of which is ndsvw's Bitcoin supply calculator [[3]](#3-ndsvw--bitcoin-supply-calculator).
 
 ```python
 from datetime import datetime
@@ -131,7 +131,7 @@ As the following plots illustrate, the higher stock-to-flow ratio is, the higher
 ![Stock-to-Flow expected price and real price](https://btc.epyzhyk.org/BTC-SF-Exp_Price-Price.png)
 
 
-Market value and price of single Bitcoin can be calculated using the following formulae [[4]](#4-planb--bitcoin-stock-to-flow-cross-asset-modelhttpsmediumcom100trillionusdbitcoin-stock-to-flow-cross-asset-model-50d260feed12):
+Market value and price of single Bitcoin can be calculated using the following formulae [[4]](#4-planb--bitcoin-stock-to-flow-cross-asset-model):
 
 ![market value](mv.png)
 
