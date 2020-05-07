@@ -1,4 +1,4 @@
-# Creating Stock-to-flow model in Python
+# Plotting Stock-to-flow model in Python
 
 ## Prerequisites
 - [Python3.6](https://www.python.org/downloads/release/python-360/)
