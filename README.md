@@ -141,10 +141,10 @@ Where:
 
 | Symbol                | Description                                            |
 | --------- | ---------------------------- |
-| $$MV$$    | Market value                 |
-| $$SF$$                | Stock-to-flow ratio            |
-| $$P$$     | Price                        |
-| $$S$$           | Stock (supply)                                     |
+| MV    | Market value                 |
+| SF                | Stock-to-flow ratio            |
+| P     | Price                        |
+| S           | Stock (supply)                                     |
 
 By applying the data and the formulae above, the following numbers are determined:
 
