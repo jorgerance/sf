@@ -115,14 +115,14 @@ By applying the formula above, the following flow values are determined:
 
 By applying the Stock-to-flow formula, the following ratios are determined:
 
-| Date of halving   | Stock, BTC         | Flow, BTC          | Stock-to-flow    |
-| ----------------- | ------------------:| ------------------:| ----------------:|
-| 28 November 2012  | 10,274,450.0       | 1,314,000          | 7.819            |
-| 9 July 2016       | 15,351,625.0       | 657,000            | 23.366           |
-| 12 May 2020       | 17,968,212.5       | 328,500            | 54.697           |
-| ~ 1 May 2024      | 19,476,606.25      | 164,250            | 118.579          |
-| ~ 1 May 2028      | 20,239,503.125     | 82,125             | 246.447          |
-| ~ 1 May 2032      | 20,620,351.5625    | 41,062.5           | 502.292          |
+| Date of halving   | Stock-to-flow    |
+| ----------------- | ----------------:|
+| 28 November 2012  | 7.819            |
+| 9 July 2016       | 23.366           |
+| 12 May 2020       | 54.697           |
+| ~ 1 May 2024      | 118.579          |
+| ~ 1 May 2028      | 246.447          |
+| ~ 1 May 2032      | 502.292          |
 
 As the following plots illustrate, the higher stock-to-flow ratio is, the higher is market value of Bitcoin and hence, its price. Therefore, this strong correlation makes it possible for the model to predict Bitcoin price in future.
 
