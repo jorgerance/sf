@@ -42,7 +42,7 @@ Stock-to-flow model was initially introduced and suggested by PlanB [[1]](#1-pla
 Where:
 
 | Symbol                | Description                                            |
-| --------- | ---------------------------- |
+|:---------:| ---------------------------- |
 | SF                | Stock-to-flow ratio            |
 | S           | Stock (supply)                                     |
 | F     | Flow (subsidy of new coins)  |
@@ -99,7 +99,7 @@ The network difficulty is set the way that new Bitcoin blocks appear in the bloc
 Where:
 
 | Symbol                | Description                                            |
-| --------- | ---------------------------- |
+|:---------:| ---------------------------- |
 | r     | Reward for each mined block  |
 
 By applying the formula above, the following flow values are determined:
@@ -140,7 +140,7 @@ Market value and price of single Bitcoin can be calculated using the following f
 Where:
 
 | Symbol                | Description                                            |
-| --------- | ---------------------------- |
+|:---------:| ---------------------------- |
 | MV    | Market value                 |
 | SF                | Stock-to-flow ratio            |
 | P     | Price                        |
