@@ -35,7 +35,7 @@ python3 sf.py
 ***
 ### Description of Stock-to-flow model and plotted charts
 
-Stock-to-flow model was initially [introduced and suggested by PlanB](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25) as an accurate measure of Bitcoin price. Although the model does not take into consideration demand for Bitcoin, it does project its price according to its scarcity (stock-to-flow ratio), i.e. total supply divided by its increase over a certain period:
+Stock-to-flow model was initially introduced and suggested by PlanB [1](#1-planb--modeling-bitcoins-value-with-scarcity) as an accurate measure of Bitcoin price. Although the model does not take into consideration demand for Bitcoin, it does project its price according to its scarcity (stock-to-flow ratio), i.e. total supply divided by its increase over a certain period:
 
 ![sf](sf.png)
 
