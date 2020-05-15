@@ -51,7 +51,7 @@ Where:
 
 Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[2]](#2-satoshi-nakamoto--bitcoin-a-peer-to-peer-electronic-cash-system), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years (210,000 blocks), which begets significant increase in scarcity.
 
-![Messari – Bitcoin historical and future supply and block rewards](https://messari.s3.amazonaws.com/images/agora-images/BTC%20halving%20schedule%2005.11.20.png)
+![Bitcoin historical and future block rewards](https://epyzhyk.org/img/btc.epyzhyk.org/bitcoin-rewards.png)
 
 Initially, the total stock for each halving date is calculated. This can be implemented using the following Python code, part of which is ndsvw's Bitcoin supply calculator [[3]](#3-ndsvw--bitcoin-supply-calculator).
 
