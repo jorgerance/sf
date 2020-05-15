@@ -35,6 +35,8 @@ python3 sf.py
 ***
 ### Step-by-step Stock-to-flow calculation
 
+> Increase the scarcity of gold to a certain degree, and the smallest bit of it may become more precious than a diamond, and exchange for a greater quantity of other goods.  – __Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations__
+
 Stock-to-flow model was initially introduced and suggested by PlanB [[1]](#1-planb--modeling-bitcoins-value-with-scarcity) as an accurate measure of Bitcoin price. Although the model does not take into consideration demand for Bitcoin, it does project its price according to its scarcity (stock-to-flow ratio), i.e. total supply divided by its increase over a certain period:
 
 ![sf](sf.png)
@@ -47,7 +49,9 @@ Where:
 | S           | Stock (supply)                                     |
 | F     | Flow (subsidy of new coins)  |
 
-Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[2]](#2-satoshi-nakamoto--bitcoin-a-peer-to-peer-electronic-cash-system), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years, which begets significant increase in scarcity.
+Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[2]](#2-satoshi-nakamoto--bitcoin-a-peer-to-peer-electronic-cash-system), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years (210,000 blocks), which begets significant increase in scarcity.
+
+![Messari – Bitcoin historical and future supply and block rewards](https://messari.s3.amazonaws.com/images/agora-images/BTC%20halving%20schedule%2005.11.20.png)
 
 Initially, the total stock for each halving date is calculated. This can be implemented using the following Python code, part of which is ndsvw's Bitcoin supply calculator [[3]](#3-ndsvw--bitcoin-supply-calculator).
 
@@ -156,6 +160,10 @@ By applying the data and the formulae above, the following numbers are determine
 | ~ 1 May 2024       | $6,166,877       |
 | ~ 1 May 2028       | $120,592,180     |
 | ~ 1 May 2032       | $2,219,429,200   |
+
+The aforementioned approach of measuring Bitcoin supply is purely based on fundamental constants hard-coded in its algorithm. Therefore, lost coins during early adoption significantly decrease the real number of Bitcoin supply and hence increase its scarcity, stock-to-flow ratio and market value.
+
+> Lost coins only make everyone else’s coins worth slightly more. Think of it as a donation to everyone. — __Satoshi Nakamoto__
 
 ##### [1] [PlanB – Modeling Bitcoin's Value with Scarcity](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25)
 ##### [2] [Satoshi Nakamoto – Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
