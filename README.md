@@ -161,7 +161,7 @@ By applying the data and the formulae above, the following numbers are determine
 | ~ 1 May 2028       | $120,592,180     |
 | ~ 1 May 2032       | $2,219,429,200   |
 
-The aforementioned approach of measuring Bitcoin supply is purely based on fundamental constants hard-coded in its algorithm. Therefore, lost coins during early adoption significantly decrease the real number of Bitcoin supply and hence increase its scarcity, stock-to-flow ratio and market value.
+The aforementioned approach of measuring Bitcoin's supply is purely based on fundamental constants hard-coded in its algorithm. Therefore, coins, which were lost during early adoption, significantly decrease the real number of Bitcoin's supply and hence increase its scarcity, stock-to-flow ratio and market value than is was predicted above.
 
 > Lost coins only make everyone else’s coins worth slightly more. Think of it as a donation to everyone. — __Satoshi Nakamoto__
 
