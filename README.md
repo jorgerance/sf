@@ -22,9 +22,7 @@ python3.6 -m pip install matplotlib pandas numpy quandl
 Paste your API key at line `18` of `sf.py`:
 
 ```python
-...
 quandl.ApiConfig.api_key = "API_KEY"
-...
 ```
 
 ### Running the script
@@ -37,7 +35,7 @@ python3 sf.py
 
 > Increase the scarcity of gold to a certain degree, and the smallest bit of it may become more precious than a diamond, and exchange for a greater quantity of other goods.  – __Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations__
 
-Stock-to-flow model was initially introduced and suggested by PlanB [[1]](#1-planb--modeling-bitcoins-value-with-scarcity) as an accurate measure of Bitcoin price. Although the model does not take into consideration demand for Bitcoin, it does project its price according to its scarcity (stock-to-flow ratio), i.e. total supply divided by its increase over a certain period:
+Stock-to-flow ratio was initially introduced by Saifedean Ammous in The Bitcoin Standard [[1]](#1-nbspnbspnbspnbsp-saifedean-ammous--the-bitcoin-standard-the-decentralized-alternative-to-central-bankinghttpssaifedeancombook) and suggested by PlanB as an approximate measure of price of Bitcoin [[2]](#2-nbspnbspnbspnbsp-planb--modeling-bitcoins-value-with-scarcityhttpsmediumcom100trillionusdmodeling-bitcoins-value-with-scarcity-91fa0fc03e25). Although the model does not take into consideration demand for Bitcoin, it does project its price according to its scarcity (stock-to-flow ratio), i.e. total supply divided by its increase over a certain period:
 
 ![sf](sf.png)
 
@@ -49,11 +47,11 @@ Where:
 | S           | Stock (supply)                                     |
 | F     | Flow (subsidy of new coins)  |
 
-Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[2]](#2-satoshi-nakamoto--bitcoin-a-peer-to-peer-electronic-cash-system), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years (210,000 blocks), which begets significant increase in scarcity.
+Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[3]](), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years (210,000 blocks), which begets significant increase in scarcity.
 
 ![Bitcoin historical and future block rewards](https://epyzhyk.org/img/btc.epyzhyk.org/bitcoin-rewards.png)
 
-Initially, the total stock for each halving date is calculated. This can be implemented using the following Python code, part of which is ndsvw's Bitcoin supply calculator [[3]](#3-ndsvw--bitcoin-supply-calculator).
+Initially, the total stock for each halving date is calculated. This can be implemented using the following Python code, part of which is ndsvw's Bitcoin supply calculator [[3]]().
 
 ```python
 from datetime import datetime
@@ -79,7 +77,7 @@ def btcSupplyAtBlock(b):
 
 
 genesis = '2009-01-01'
-hdates = ['2012-11-28','2016-09-07','2020-05-12','2024-05-01','2028-05-01','2032-05-01']
+hdates = ['2012-11-28','2016-09-07','2020-05-11','2024-05-01','2028-05-01','2032-05-01']
 
 if __name__ == "__main__":
     for date in hdates:
@@ -165,7 +163,9 @@ The aforementioned approach of measuring Bitcoin’s supply is purely based on f
 
 > Lost coins only make everyone else’s coins worth slightly more. Think of it as a donation to everyone. — __Satoshi Nakamoto__
 
-##### [1] [PlanB – Modeling Bitcoin's Value with Scarcity](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25)
-##### [2] [Satoshi Nakamoto – Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
-##### [3] [ndsvw – Bitcoin-Supply-Calculator](https://github.com/ndsvw/Bitcoin-Supply-Calculator)
-##### [4] [PlanB – Bitcoin Stock-to-Flow Cross Asset Model](https://medium.com/@100trillionUSD/bitcoin-stock-to-flow-cross-asset-model-50d260feed12)
+##### [1] &nbsp;&nbsp;&nbsp;&nbsp; Saifedean Ammous — [The Bitcoin Standard: The Decentralized Alternative to Central Banking](https://saifedean.com/book/)
+##### [2] &nbsp;&nbsp;&nbsp;&nbsp; PlanB – [Modeling Bitcoin's Value with Scarcity](https://medium.com/@100trillionUSD/modeling-bitcoins-value-with-scarcity-91fa0fc03e25)
+##### [3] &nbsp;&nbsp;&nbsp;&nbsp; Satoshi Nakamoto – [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
+##### [4] &nbsp;&nbsp;&nbsp;&nbsp; Kevin Schellinger – [Understanding Bitcoin’s 21 Million Coins](https://medium.com/@k_schellinger/understanding-bitcoins-21-million-limit-310297a7d962)
+##### [5] &nbsp;&nbsp;&nbsp;&nbsp; ndsvw – [Bitcoin-Supply-Calculator](https://github.com/ndsvw/Bitcoin-Supply-Calculator)
+##### [6] &nbsp;&nbsp;&nbsp;&nbsp; PlanB – [Bitcoin Stock-to-Flow Cross Asset Model](https://medium.com/@100trillionUSD/bitcoin-stock-to-flow-cross-asset-model-50d260feed12)
