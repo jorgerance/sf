@@ -57,7 +57,8 @@ totbtc['sf'] = totbtc['Value']/totbtc['flow']
 totbtc['sf1y'] = totbtc['Value']/totbtc['flow1y']
 totbtc['cap'] = cap['Value']
 
-hdates = ['2009-01-01', '2012-11-28', '2016-07-09', '2020-05-12']
+hdates = ['2009-01-01', '2012-11-28', '2016-07-09', '2020-05-11', '2024-05-01', '2028-05-01', '2032-05-01']
+
 h = pd.DataFrame(columns=['Date','ds_bfr_hlvng','sf','cap'])
 
 for i in range(1, len(hdates)):
