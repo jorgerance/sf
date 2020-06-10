@@ -35,7 +35,7 @@ python3 sf.py
 
 > Increase the scarcity of gold to a certain degree, and the smallest bit of it may become more precious than a diamond, and exchange for a greater quantity of other goods.  – __Adam Smith, An Inquiry into the Nature and Causes of the Wealth of Nations__
 
-Stock-to-flow ratio was initially introduced by Saifedean Ammous in The Bitcoin Standard [[1]](#1-nbspnbspnbspnbsp-saifedean-ammous--the-bitcoin-standard-the-decentralized-alternative-to-central-bankinghttpssaifedeancombook) and suggested by PlanB as an approximate measure of price of Bitcoin [[2]](#2-nbspnbspnbspnbsp-planb--modeling-bitcoins-value-with-scarcityhttpsmediumcom100trillionusdmodeling-bitcoins-value-with-scarcity-91fa0fc03e25). Although the model does not take into consideration demand for Bitcoin, it does project its price according to its scarcity (stock-to-flow ratio), i.e. total supply divided by its increase over a certain period:
+Stock-to-flow ratio was initially introduced by Saifedean Ammous in The Bitcoin Standard [[1]](#1--saifedean-ammous--the-bitcoin-standard-the-decentralized-alternative-to-central-banking) and suggested by PlanB as an approximate measure of price of Bitcoin [[2]](#2--planb--modeling-bitcoins-value-with-scarcity). Although the model does not take into consideration demand for Bitcoin, it does project its price according to its scarcity (stock-to-flow ratio), i.e. total supply divided by its increase over a certain period:
 
 ![sf](sf.png)
 
@@ -47,11 +47,15 @@ Where:
 | S           | Stock (supply)                                     |
 | F     | Flow (subsidy of new coins)  |
 
-Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[3]](), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years (210,000 blocks), which begets significant increase in scarcity.
+Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[3]](#3--satoshi-nakamoto--bitcoin-a-peer-to-peer-electronic-cash-system), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years (210,000 blocks), which begets significant increase in scarcity.
 
 ![Bitcoin historical and future block rewards](https://epyzhyk.org/img/btc.epyzhyk.org/bitcoin-rewards.png)
 
-Initially, the total stock for each halving date is calculated. This can be implemented using the following Python code, part of which is ndsvw's Bitcoin supply calculator [[3]]().
+Initially, the total stock for each halving date is calculated. The following formula describes total technical supply at a particular halving [[4]](#4--kevin-schellinger--understanding-bitcoins-21-million-coins):
+
+![technical supply formula](ts.png)
+
+Initially, the total stock for each halving date is calculated. This can be implemented using the following Python code, part of which is ndsvw's Bitcoin supply calculator [[5]](#5--ndsvw--bitcoin-supply-calculator).
 
 ```python
 from datetime import datetime
@@ -96,7 +100,7 @@ if __name__ == "__main__":
 
 The network difficulty is set the way that new Bitcoin blocks appear in the blockchain around every 10 minutes. Giving the fact that reward for mining Bitcoin blocks is the only source of new coins and it is reduced by 50% approximately every 4 years (210,000 blocks), it is possible to calculate Bitcoin annual flow using the following formula:
 
-![flow](f.png)
+![flow formula](f.png)
 
 Where:
 
@@ -133,11 +137,11 @@ As the following plots illustrate, the higher stock-to-flow ratio is, the higher
 ![Stock-to-Flow expected price and real price](https://btc.epyzhyk.org/BTC-SF-Exp_Price-Price.png)
 
 
-Market value and price of single Bitcoin can be calculated using the following formulae [[4]](#4-planb--bitcoin-stock-to-flow-cross-asset-model):
+Market value and price of single Bitcoin can be calculated using the following formulae [[6]](#6--planb--bitcoin-stock-to-flow-cross-asset-model):
 
-![market value](mv.png)
+![market value formula](mv.png)
 
-![price](p.png)
+![price formula](p.png)
 
 Where:
 
