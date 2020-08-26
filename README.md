@@ -19,7 +19,7 @@ sudo apt install python3.6 python3-pip
 python3.6 -m pip install matplotlib pandas numpy quandl
 ```
 
-Paste your API key at line `18` of `sf.py`:
+Paste your API key at line `20` of `sf.py`:
 
 ```python
 quandl.ApiConfig.api_key = "API_KEY"
