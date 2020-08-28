@@ -49,7 +49,7 @@ Where:
 
 Provided the known supply and increase of Bitcoin, which are exactly predetermined and hard-coded in its source code and vividly described in its whitepaper [[3]](#3--satoshi-nakamoto--bitcoin-a-peer-to-peer-electronic-cash-system), it is possible to approximately predict the price using the stock-to-flow model. Moreover, due to Bitcoin halvings, reward for each mined block and, as a consequence, flow of new Bitcoins, are reduced by 50% approximately every 4 years (210,000 blocks), which begets significant increase in scarcity.
 
-![Bitcoin historical and future block rewards](https://epyzhyk.org/img/btc.epyzhyk.org/bitcoin-rewards.png)
+![Bitcoin historical and future block rewards](https://pyzhyk.org/img/btc.pyzhyk.org/bitcoin-rewards.png)
 
 Initially, the total stock for each halving date is calculated. The following formula describes total technical supply at a particular halving [[4]](#4--kevin-schellinger--understanding-bitcoins-21-million-coins):
 
@@ -132,9 +132,9 @@ By applying the Stock-to-flow formula, the following ratios are determined:
 
 As the following plots illustrate, the higher stock-to-flow ratio is, the higher is market value of Bitcoin and hence, its price. Therefore, this strong correlation makes it possible for the model to predict Bitcoin price in future.
 
-![Stock-to-Flow ratio and market value](https://btc.epyzhyk.org/BTC-SF-MV.png)
+![Stock-to-Flow ratio and market value](https://btc.pyzhyk.org/BTC-SF-MV.png)
 
-![Stock-to-Flow expected price and real price](https://btc.epyzhyk.org/BTC-SF-Exp_Price-Price.png)
+![Stock-to-Flow expected price and real price](https://btc.pyzhyk.org/BTC-SF-Exp_Price-Price.png)
 
 
 Market value and price of single Bitcoin can be calculated using the following formulae [[6]](#6--planb--bitcoin-stock-to-flow-cross-asset-model):
